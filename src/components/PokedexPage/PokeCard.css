@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+*{
+  font-family: 'Roboto', sans-serif;
+}
+.pokeCard{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.PokemonCard {
+  display: block;
+  width: 291px;
+  aspect-ratio: 1;
+  border: 10px solid #E52D2D;
+  border-radius: 14px;
+  margin: 1rem;
+}
+.grass{
+  color: rgb(2, 88, 2);
+  background: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
+  border: 10px solid #CAE099;
+}
+.bug{
+  color: rgb(2, 88, 2);
+  background: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
+  border: 10px solid #CAE099;
+}
+.fire{
+  background: linear-gradient(176.37deg, #F96D6F -32.26%, #E35825 22.55%, #E8AE1B 125.72%);
+  border: 10px solid #E35825;
+  color: #b6471e;
+}
+.water{
+  background: linear-gradient(179.57deg, #133258 -70.14%, #1479FB 56.16%, #82B2F1 214.85%);
+  color: #133258;
+  border: 10px solid #82B2F1;
+}
+.ghost{
+  background: linear-gradient(177.03deg, #323569 -11.97%, #454AA8 57.49%, #787DDA 135.64%);
+  color: #323569;
+  border: 10px solid #787DDA ;
+}
+.poison{
+  background: linear-gradient(177.03deg, #5B3184 -11.97%, #A564E3 71.28%, #CE9BFF 135.64%);
+  color: #5B3184;
+  border: 10px solid #CE9BFF  ;
+}
+.fighting{
+  background: linear-gradient(176.83deg, #96402A -8.78%, #F1613C 169.09%, #CB735D 242.33%);
+  color: #96402A;
+  border: 10px solid #CB735D  ;
+}
+.normal{
+  background: linear-gradient(181.51deg, #735259 -6.44%, #BC6B7C 121.95%, #7C3F4C 186.11%);
+color: #735259;
+  border: 10px solid #7C3F4C  ;
+}
+.rock{
+  background: linear-gradient(177.03deg, #7E7E7E -11.97%, #8D8D94 57.49%, #D3D3D3 135.64%);
+  color: #7E7E7E;
+  border: 10px solid #D3D3D3  ;
+}
+.dark{
+  background: linear-gradient(177.03deg, #030706 -11.97%, #0D1211 57.49%, #5A5E5D 135.64%);
+  color: #030706;
+  border: 10px solid #5A5E5D;
+}
+.ice{
+  background: linear-gradient(177.03deg, #6FBEDF -11.97%, #64CBF5 47.77%, #BDEBFE 136.72%);
+  color: #6FBEDF;
+  border: 10px solid #BDEBFE;
+}
+.steel{
+  background: linear-gradient(179.75deg, #5E736C -19.96%, #728881 43.67%, #A8A8A8 138.4%);
+  color: #5E736C;
+  border: 10px solid #A8A8A8;
+}
+.ground{
+  background: linear-gradient(179.75deg, #654008 -19.96%, #895C1A 43.67%, #D69638 138.4%);
+  color: #654008;
+    border: 10px solid #D69638;
+}
+.electric{
+  background: linear-gradient(179.75deg, #0C1395 -19.96%, #2B319B 43.67%, #7075D9 138.4%);
+  color: #0C1395;
+    border: 10px solid #7075D9;
+}
+.fairy{
+  background: linear-gradient(179.75deg, #971B45 -19.96%, #C23867 43.67%, #CD7D98 138.4%);
+  color: #971B45;
+  border: 10px solid #CD7D98;
+}
+.dragon{
+  background: linear-gradient(179.75deg, #478A93 -19.96%, #56A4AE 43.67%, #A2BEC1 138.4%);
+  color: #478A93;
+  border: 10px solid #A2BEC1;
+}
+.psychic{
+  background: linear-gradient(179.75deg, #E62D2D -19.96%, #D13E3E 43.67%, #F07F7F 138.4%);
+  color: #E62D2D;
+  border: 10px solid #F07F7F;
+}
+.PokemonCard_Header {
+  text-align: center;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.113);
+  border-radius: 5px;
+}
+.PokemonCard_Image {
+  position: relative;
+  top: 30px;
+}
+.PokemonCard_Section {
+  width: 100%;
+  background-color: #ffffff;
+}
+.PokemonCard_Name {
+  font-weight: 600;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.PokemonCard_Type {
+  display: flex;
+  justify-content: center;
+  font-weight: 300;
+  gap: 20px;
+  padding: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.PokemonCard_TextType{
+  margin-top: 10px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.675);
+  text-align: center;
+}
+.PokemonCard_Stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding: 0;
+  list-style: none;
+  height: 150px;
+}
+.PokemonCard_Stats_li {
+  line-height: 1.5;
+}
+.PokemonCard_Stats_list {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80px;
+  height: 70px;
+}
+.PokemonCard_Stats_Name{
+  font-weight: 400;
+  color: rgba(76, 76, 76, 0.675);
+  text-align: center;
+}
