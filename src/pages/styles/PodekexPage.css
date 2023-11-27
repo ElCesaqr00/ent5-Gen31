@@ -37,6 +37,16 @@
   border-radius: 10px 10px 10px 10px; 
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.402);
 }
+.pokedex_Btn {
+  position: inherit;
+  height: 72px;
+  width: 190px;
+  font-size: 25px;
+  border-radius: 0px 10px 10px 0px; 
+  color: white;
+  border: none;
+  background-color: rgba(217, 63, 63, 1);
+}
 .pokedex_Input {
   display: flex;
   flex-wrap: wrap;
@@ -50,15 +60,7 @@
   font-weight: 500;
   letter-spacing: 0em;
 }
-.pokedex_Btn {
-  height: 72px;
-  width: 190px;
-  font-size: 25px;
-  border-radius: 0px 10px 10px 0px; 
-  color: white;
-  border: none;
-  background-color: rgba(217, 63, 63, 1);
-}
+
 .pokedex_welcome {
   font-family: Inter;
   font-size: 24px;
@@ -81,7 +83,6 @@
   color: rgba(254, 25, 54, 1);
 }
 .pokedex-page_poke-cards {
-  
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;

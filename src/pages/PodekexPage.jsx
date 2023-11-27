@@ -35,12 +35,12 @@ const PodekexPage = () => {
 
     return nameFilter
   }
-
+    console.log(search)
   return (
     <>
     <section className='pokedex-page_container'>
       <article className='pokedex-page_img-container'>
-      <img className='pokedex-page_img' src="/public/Group217.svg" alt="" />
+      <img className='pokedex-page_img' src="/Group217.svg" alt="" />
       <img className="pokedex_Img" src="/image11.png" alt="" />
       </article>
       <article className='pokedex-page_container-form'>

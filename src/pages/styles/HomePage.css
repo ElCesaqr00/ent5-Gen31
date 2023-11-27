@@ -17,7 +17,7 @@
     display: flex;
     justify-content: center;
     height: 100px;
-    width: 500px;
+    width: 800px;
 
 }
 .pokedex_Img{
@@ -45,14 +45,14 @@
 }
 .pokedex_Form{
     display: flex;
-    background-color: red;;
-    width: 662px;
+    width: 462px;
     height: 68px;
     top: 595px;
     left: 389px;
     font-family: 'Roboto', sans-serif;
     margin-top: 40px;
     margin-bottom: 100px;
+    border-radius: 8px;
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.402);
 }
 .pokedex_Input{
@@ -67,13 +67,13 @@
     letter-spacing: 0em;
 }
 .pokedex_Btn{
+    position: relative;
     height: 72px;
     width: 190px;
     font-size: 25px;
-    color: white;
+    color: rgb(255, 255, 255);
     border: none;
     background-color: rgba(217, 63, 63, 1);
-    ;
 }
 .pokedex_footer-image{
     max-width: none;
