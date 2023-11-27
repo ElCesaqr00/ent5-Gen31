@@ -1,177 +1,439 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-.container {
-  display: flex;
-  justify-content: center;
+html {
+  background-color: #dbd7d7;
+}
+body {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .poke_img {
   max-width: none;
   height: 200px;
 }
+.poke_img2 {
+  max-width: none;
+  height: 14rem;
+}
 
 .grass {
   color: rgb(2, 88, 2);
-  background: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
+  background: linear-gradient(
+    178.92deg,
+    #7ec6c5 0.92%,
+    #abdac6 47.96%,
+    #cae099 99.08%
+  );
 }
 
 .bug {
   color: rgb(2, 88, 2);
-  background: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
+  background: linear-gradient(
+    178.92deg,
+    #7ec6c5 0.92%,
+    #abdac6 47.96%,
+    #cae099 99.08%
+  );
 }
 
 .fire {
-  background: linear-gradient(176.37deg, #F96D6F -32.26%, #E35825 22.55%, #E8AE1B 125.72%);
+  background: linear-gradient(
+    176.37deg,
+    #f96d6f -32.26%,
+    #e35825 22.55%,
+    #e8ae1b 125.72%
+  );
   color: #b6471e;
 }
 
 .water {
-  background: linear-gradient(179.57deg, #133258 -70.14%, #1479FB 56.16%, #82B2F1 214.85%);
+  background: linear-gradient(
+    179.57deg,
+    #133258 -70.14%,
+    #1479fb 56.16%,
+    #82b2f1 214.85%
+  );
   color: #133258;
 }
 
 .ghost {
-  background: linear-gradient(177.03deg, #323569 -11.97%, #454AA8 57.49%, #787DDA 135.64%);
+  background: linear-gradient(
+    177.03deg,
+    #323569 -11.97%,
+    #454aa8 57.49%,
+    #787dda 135.64%
+  );
   color: #323569;
 }
 
 .poison {
-  background: linear-gradient(177.03deg, #5B3184 -11.97%, #A564E3 71.28%, #CE9BFF 135.64%);
-  color: #5B3184;
+  background: linear-gradient(
+    177.03deg,
+    #5b3184 -11.97%,
+    #a564e3 71.28%,
+    #ce9bff 135.64%
+  );
+  color: #5b3184;
 }
 
 .fighting {
-  background: linear-gradient(176.83deg, #96402A -8.78%, #F1613C 169.09%, #CB735D 242.33%);
-  color: #96402A;
+  background: linear-gradient(
+    176.83deg,
+    #96402a -8.78%,
+    #f1613c 169.09%,
+    #cb735d 242.33%
+  );
+  color: #96402a;
 }
 
 .normal {
-  background: linear-gradient(181.51deg, #735259 -6.44%, #BC6B7C 121.95%, #7C3F4C 186.11%);
+  background: linear-gradient(
+    181.51deg,
+    #735259 -6.44%,
+    #bc6b7c 121.95%,
+    #7c3f4c 186.11%
+  );
   color: #735259;
 }
 
 .rock {
-  background: linear-gradient(177.03deg, #7E7E7E -11.97%, #8D8D94 57.49%, #D3D3D3 135.64%);
-  color: #7E7E7E;
+  background: linear-gradient(
+    177.03deg,
+    #7e7e7e -11.97%,
+    #8d8d94 57.49%,
+    #d3d3d3 135.64%
+  );
+  color: #7e7e7e;
 }
 
 .dark {
-  background: linear-gradient(177.03deg, #030706 -11.97%, #0D1211 57.49%, #5A5E5D 135.64%);
+  background: linear-gradient(
+    177.03deg,
+    #030706 -11.97%,
+    #0d1211 57.49%,
+    #5a5e5d 135.64%
+  );
   color: #030706;
 }
 
 .ice {
-  background: linear-gradient(177.03deg, #6FBEDF -11.97%, #64CBF5 47.77%, #BDEBFE 136.72%);
-  color: #6FBEDF;
+  background: linear-gradient(
+    177.03deg,
+    #6fbedf -11.97%,
+    #64cbf5 47.77%,
+    #bdebfe 136.72%
+  );
+  color: #6fbedf;
 }
 
 .steel {
-  background: linear-gradient(179.75deg, #5E736C -19.96%, #728881 43.67%, #A8A8A8 138.4%);
-  color: #5E736C;
+  background: linear-gradient(
+    179.75deg,
+    #5e736c -19.96%,
+    #728881 43.67%,
+    #a8a8a8 138.4%
+  );
+  color: #5e736c;
 }
 
 .ground {
-  background: linear-gradient(179.75deg, #654008 -19.96%, #895C1A 43.67%, #D69638 138.4%);
+  background: linear-gradient(
+    179.75deg,
+    #654008 -19.96%,
+    #895c1a 43.67%,
+    #d69638 138.4%
+  );
   color: #654008;
 }
 
 .electric {
-  background: linear-gradient(179.75deg, #0C1395 -19.96%, #2B319B 43.67%, #7075D9 138.4%);
-  color: #0C1395;
+  background: linear-gradient(
+    179.75deg,
+    #0c1395 -19.96%,
+    #2b319b 43.67%,
+    #7075d9 138.4%
+  );
+  color: #0c1395;
 }
 
 .fairy {
-  background: linear-gradient(179.75deg, #971B45 -19.96%, #C23867 43.67%, #CD7D98 138.4%);
-  color: #971B45;
+  background: linear-gradient(
+    179.75deg,
+    #971b45 -19.96%,
+    #c23867 43.67%,
+    #cd7d98 138.4%
+  );
+  color: #971b45;
 }
 
 .dragon {
-  background: linear-gradient(179.75deg, #478A93 -19.96%, #56A4AE 43.67%, #A2BEC1 138.4%);
-  color: #478A93;
+  background: linear-gradient(
+    179.75deg,
+    #478a93 -19.96%,
+    #56a4ae 43.67%,
+    #a2bec1 138.4%
+  );
+  color: #478a93;
 }
 
 .psychic {
-  background: linear-gradient(179.75deg, #E62D2D -19.96%, #D13E3E 43.67%, #F07F7F 138.4%);
-  color: #E62D2D;
+  background: linear-gradient(
+    179.75deg,
+    #e62d2d -19.96%,
+    #d13e3e 43.67%,
+    #f07f7f 138.4%
+  );
+  color: #e62d2d;
 }
 
 .poke_general-info {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: flex-start;
   flex-direction: column;
-  margin-top: 4%;
+  background-color: #fff;
+  margin-top: 8em;
+  width: 75%;
+  height: 120vh;
+}
+.poke_img_container {
+  display: flex;
+  justify-content: center;
   width: 100%;
-  height: 70vh;
+  margin-bottom: 12px;
 }
 
 .poke_info_stats {
   display: flex;
-  margin-top: 20px;
   justify-content: center;
   width: 70%;
+  height: 100px;
 }
 
-.poke_article{
+.poke_article {
   display: flex;
   line-height: 1.5;
   gap: 50px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
-
 .poke_stats {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-height: 80px;
-  height: 180px;
-}
-
-.test2{
-  display: flex;
-  align-content: center;
+  height: 80px;
 }
 
 .test {
   display: flex;
-  gap: 10px;
+  padding-top: 20px;
+  gap: 20px;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
-  top: 115%;
+  height: 100%;
 }
-
+.test2 {
+  width: 200px;
+}
 .poke_info {
   display: flex;
   flex-direction: column;
   text-align: center;
-  
+  font-size: 1.5rem;
+  margin-bottom: 15px;
 }
 
-.poke_response{
-  font-family: 'Roboto', sans-serif;
+.poke_response {
+  font-family: "Roboto", sans-serif;
   font-weight: 800;
 }
 
 .poke_name {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  margin: 2vw;
+  width: 12vw;
+  height: 5vw;
   color: rgb(0, 0, 0);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
+  font-size: 1.5vw;
+}
+.poke_name > h3 {
+  border: 1px solid rgba(0, 0, 0, 0.243);
+  width: max-content;
+  margin-left: 33%;
 }
 
+.poke_movemen_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .poke_movement {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
   width: 70%;
-  height: 600px;
+  height: 500px;
+}
+
+.poke_movement > li {
+  display: flex;
+  font-size: 1.3em;
+  color: white;
+  background-color: gray;
+  margin: 4px;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.poke_list {
+  display: flex;
+  gap: 40px;
+  margin-top: 15px;
+  list-style: none;
+  color: black;
+}
+
+div > h2 {
+  font-size: 1.5em;
+}
+.poke_hability1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15vw;
+  height: 5vw;
+  border: 1px solid rgba(0, 0, 0, 0.352);
+}
+.poke_type {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  list-style: none;
+  margin-top: 40px;
+  width: 100%;
+  height: 90px;
+}
+
+.poke_type1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15vw;
+  height: 5vw;
+}
+
+.poke_type2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15vw;
+  height: 5vw;
+  border: 1px solid rgba(0, 0, 0, 0.293);
+}
+h2 {
+  color: black;
+}
+
+.grass1 {
+  color: white;
+  background: #cae099;
+}
+
+.bug1 {
+  color: white;
+  background: #cae099;
+}
+
+.fire1 {
+  background: #e8ae1b;
+  color: white;
+}
+
+.water1 {
+  background: #82b2f1;
+  color: white;
+}
+
+.ghost1 {
+  background: #787dda;
+  color: white;
+}
+
+.poison1 {
+  background: #ce9bff;
+  color: white;
+}
+
+.fighting1 {
+  background: #cb735d;
+  color: white;
+}
+
+.normal1 {
+  background: #7c3f4c;
+  color: white;
+}
+
+.rock1 {
+  background: #d3d3d3;
+  color: white;
+}
+
+.dark1 {
+  background: #5a5e5d;
+  color: white;
+}
+
+.ice1 {
+  background: #bdebfe;
+  color: white;
+}
+
+.steel1 {
+  background: #a8a8a8;
+  color: white;
+}
+
+.ground1 {
+  background: #d69638;
+  color: white;
+}
+
+.electric1 {
+  background: #7075d9;
+  color: white;
+}
+
+.fairy1 {
+  background: #cd7d98;
+  color: white;
+}
+
+.dragon1 {
+  background: #a2bec1;
+  color: white;
+}
+
+.psychic1 {
+  background: #f07f7f;
+  color: white;
 }

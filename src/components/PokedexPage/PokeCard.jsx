@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import "./PokeCard.css"
 
-const PokeCard = ( { url } ) => {
+const PokeCard = ( {  url } ) => {
 
   const [infoPoke, getInfoPoke] = useFetch(url)
 
@@ -19,7 +19,7 @@ navigate( `/pokedex/${infoPoke.id}` )
 }
 
   return (
-    <div className='Card-Container'>
+    <section className='Card-Container'>
       <article className={`PokemonCard ${infoPoke?.types[0].type.name}` }>
         <header className={`PokemonCard_Header ${infoPoke?.types[0].type.name}` } onClick={handleNavigate}>
           <img className='PokemonCard_Image' src={infoPoke?.sprites.other["official-artwork"].front_default} alt="" />
@@ -51,7 +51,7 @@ navigate( `/pokedex/${infoPoke.id}` )
           </ul>
         </section>
       </article>
-   </div>
+   </section>
   )
 }
 

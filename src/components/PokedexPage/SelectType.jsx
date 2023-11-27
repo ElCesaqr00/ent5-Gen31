@@ -17,6 +17,7 @@ const selectElement = useRef()
 const handleChange = () => {
     setSelectValue(selectElement?.current.value)
 }
+
   return (
     <select className='pokedex_selector' ref={selectElement} onChange={handleChange}>
         <option value="allPokemons">All pokemon</option>

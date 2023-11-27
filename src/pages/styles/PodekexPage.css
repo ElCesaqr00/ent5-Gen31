@@ -5,6 +5,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+.pokedex_selector{
+  height: 38px;
+  width: 8em;
+}
 .pokedex-page_img {
   position: absolute;
   max-width: none;
@@ -35,11 +39,11 @@
   display: flex;
   width: 100%;
   border-radius: 10px 10px 10px 10px; 
-  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.402);
 }
 .pokedex_Btn {
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.402);
   position: inherit;
-  height: 72px;
+  height: 38px;
   width: 190px;
   font-size: 25px;
   border-radius: 0px 10px 10px 0px; 
@@ -51,9 +55,11 @@
   display: flex;
   flex-wrap: wrap;
   background-color: rgba(255, 255, 255, 1);
-  border-radius: 10px 0px 0px 10px; 
-  border: none;
+  height: 38px;
   width: 14em;
+  border: none;
+  border-radius: 10px 0px 0px 10px; 
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.402);
   color: gray;
   font-family: Roboto;
   font-size: 25px;

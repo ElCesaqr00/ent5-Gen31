@@ -35,7 +35,7 @@ const PodekexPage = () => {
 
     return nameFilter
   }
-    console.log(search)
+    console.log(pokemons)
   return (
     <>
     <section className='pokedex-page_container'>

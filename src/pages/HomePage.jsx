@@ -25,7 +25,7 @@ const HomePage = () => {
       <p className="pokedex_Text">To start, please give me your trainer name</p>
       <form className="pokedex_Form" onSubmit={handleSubmit}>
         <input className="pokedex_Input" ref={inputName} type="text" placeholder="Your name..." />
-        <button className="pokedex_Btn">Let´s Go!</button>
+        <button className="pokedex_btn">Let´s Go!</button>
       </form>
       <img className="pokedex_footer-image" src="/Group216.svg" alt="" />
     </div>
