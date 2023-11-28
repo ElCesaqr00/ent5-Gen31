@@ -38,8 +38,8 @@ navigate( `/pokedex/${infoPoke.id}` )
           <ul className='PokemonCard_Stats'>
             {
               infoPoke?.stats.map(infoStats => (
-                <div className='PokemonCard_Stats_li'>
-                <li className='PokemonCard_Stats_list' key={infoStats.stat.url}>
+                <div className='PokemonCard_Stats_li' key={infoStats.stat.url}>
+                <li className='PokemonCard_Stats_list' >
                 
                 <span className='PokemonCard_Stats_Name'>{infoStats.stat.name} </span>
                 <span className='PokemonCard_Stats_Number'>{infoStats.base_stat} </span>

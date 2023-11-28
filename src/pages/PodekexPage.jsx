@@ -8,7 +8,7 @@ import "./styles/PodekexPage.css"
 const PodekexPage = () => {
 
   const [search, setSearch] = useState("")
-  const [selectValue, setSelectValue] = useState("")
+  const [selectValue, setSelectValue] = useState("allPokemons")
   
   const trainerName = useSelector(store => store.trainerName)
   
